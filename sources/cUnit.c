@@ -12,6 +12,8 @@ void                    uTInit(void)
 
 /*
 ** Subscribes a new unit test to the unit test list
+** Param name   :   test designation
+** Param pass   :   assert value (UTFAIL, UTSUCCESS)
 */
 void                    uTSubscribe(char *name, size_t pass)
 {
@@ -31,6 +33,8 @@ void                    uTSubscribe(char *name, size_t pass)
 
 /*
 ** Runs all tests and clear resources
+** Param id     :   filedescriptor
+** Param dFlags :   display flag (DISP_FAILURE, DISP_SUCCESS, DISP_ALL)
 */
 void                    uTRun(int fd, int dFlags)
 {

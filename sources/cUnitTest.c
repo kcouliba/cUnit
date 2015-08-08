@@ -2,6 +2,8 @@
 
 /*
 ** Allocates memory for a new unit test
+** Param id     :   test id
+** Param name   :   test designation
 */
 t_unitTest          *newUnitTest(int id, char *name)
 {
@@ -18,6 +20,7 @@ t_unitTest          *newUnitTest(int id, char *name)
 
 /*
 ** Frees memory from a unit test
+** Param uTest :   a unit test structure
 */
 void                deleteUnitTest(t_unitTest **uTest)
 {
