@@ -48,9 +48,4 @@ size_t                      assertFalse(size_t predicate);
 size_t                      assertNullPtr(void *ptr);
 size_t                      assertEqualsPtr(void *ptrA, void *ptrB);
 
-/*
-** global variable
-*/
-t_lUTest                    *uTlist;
-
 #endif // UNITTEST_H
